@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekjon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f39c12;
+}
+button{
+    width: 20px;
+    height: auto;
+    padding: 1px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.none{
+    display: none;
+}
+.a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8rem;
+    height: 98vh;
+    background-color: black;
+    padding-top: 1rem;
+}
+.a:hover{
+    color: #f39c12;
+    font-size: 1.5rem;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">O'ng tarafga bos👉</a>
+        </div>
+        <button><i class="fa-solid fa-bars"></i></button>
+        <div class="a none"><ul class="nav-links ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul></div>
+    </nav>
+    
+
+</body>
+</html>
