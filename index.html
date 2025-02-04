@@ -69,7 +69,7 @@ button{
     position: absolute;
     right: 0;
     top: 0;
-    width: 8rem;
+    width: 10rem;
     height: 98vh;
     background-color: black;
     padding-top: 1rem;
@@ -77,6 +77,14 @@ button{
 .a:hover{
     color: #f39c12;
     font-size: 1.5rem;
+}
+.li{
+    display: flex;
+    justify-content: space-between;
+}
+.d{
+    color: blue;
+    cursor: pointer;
 }
 
     </style>
@@ -87,15 +95,32 @@ button{
         <div class="logo">
             <a href="#">O'ng tarafga bos👉</a>
         </div>
-        <button><i class="fa-solid fa-bars"></i></button>
+        <button class="btn"><i class="fa-solid fa-bars"></i></button>
         <div class="a none"><ul class="nav-links ">
-            <li><a href="#">Home</a></li>
+            <li class="li"><a href="#">Home</a>    <i class="fa-solid fa-xmark d"></i></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul></div>
     </nav>
-    
+    <script>
+        const button=document.querySelector('.btn')
+        const modal=document.querySelector('.a')
+        const close=document.querySelector('.d')
+        button.addEventListener('click', () => {
+        modal.classList.remove('none'); 
+    });
+    close.addEventListener('click', () => {
+        modal.classList.add('none'); 
+    });
+    document.addEventListener('keydown', function(event){
+        if(event.key==='Escape'){
+            modal.classList.add('none')
+        }if (event.key==='Enter'){
+            modal.classList.remove('none');
+        }
+    })
+    </script>
 
 </body>
 </html>
